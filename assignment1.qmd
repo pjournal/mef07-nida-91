@@ -1,6 +1,6 @@
 ---
 title: "Assignment 1"
-date: "2022-10-01"
+date: "2023-10-25"
 ---
 ##hellobbbb
 This is a template example qmd output page. You may see an example R code below.
