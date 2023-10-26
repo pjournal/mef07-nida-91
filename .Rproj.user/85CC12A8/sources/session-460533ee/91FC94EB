@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/mef07-nida-91/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "2727692414",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1698341030772.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "16,16",
+        "cursorPosition": "10,17",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1698341067,
+    "lastKnownWriteTime": 1698343033,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1698341067520,
+    "last_content_update": 1698343033279,
     "read_only": false,
     "read_only_alternatives": []
 }
