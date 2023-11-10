@@ -1,0 +1,4 @@
+"0","set.seed(123)"
+"0","x <- rnorm(30)"
+"0","y <- x + rnorm(30)  "
+"0","plot(density(x))   "
