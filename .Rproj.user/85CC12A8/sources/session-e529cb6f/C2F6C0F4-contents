@@ -40,7 +40,7 @@ youtube %>%
 
 I want to bring the top 5 videos that have got the highest number of comments worldwide during the time range of the dataset:
 
-## I include the total of likes and views in my summary table:
+
 ```{r}
 youtube  %>%
   group_by(title) %>%

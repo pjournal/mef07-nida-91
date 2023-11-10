@@ -191,8 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation"><span class="header-section-number">2.1</span> | Preparation</a></li>
   <li><a href="#analysis-1" id="toc-analysis-1" class="nav-link" data-scroll-target="#analysis-1"><span class="header-section-number">2.2</span> | Analysis 1</a></li>
   <li><a href="#analysis-2" id="toc-analysis-2" class="nav-link" data-scroll-target="#analysis-2"><span class="header-section-number">2.3</span> | Analysis 2</a></li>
-  <li><a href="#i-include-the-total-of-likes-and-views-in-my-summary-table" id="toc-i-include-the-total-of-likes-and-views-in-my-summary-table" class="nav-link" data-scroll-target="#i-include-the-total-of-likes-and-views-in-my-summary-table"><span class="header-section-number">2.4</span> I include the total of likes and views in my summary table:</a></li>
-  <li><a href="#analysis-3" id="toc-analysis-3" class="nav-link" data-scroll-target="#analysis-3"><span class="header-section-number">2.5</span> | Analysis 3</a></li>
+  <li><a href="#analysis-3" id="toc-analysis-3" class="nav-link" data-scroll-target="#analysis-3"><span class="header-section-number">2.4</span> | Analysis 3</a></li>
   </ul>
 </nav>
     </div>
@@ -301,9 +300,6 @@ Attaching package: 'dplyr'</code></pre>
 <section id="analysis-2" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="analysis-2"><span class="header-section-number">2.3</span> | Analysis 2</h2>
 <p>I want to bring the top 5 videos that have got the highest number of comments worldwide during the time range of the dataset:</p>
-</section>
-<section id="i-include-the-total-of-likes-and-views-in-my-summary-table" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="i-include-the-total-of-likes-and-views-in-my-summary-table"><span class="header-section-number">2.4</span> I include the total of likes and views in my summary table:</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>youtube  <span class="sc">%&gt;%</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(title) <span class="sc">%&gt;%</span></span>
@@ -323,8 +319,8 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 </div>
 </section>
-<section id="analysis-3" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="analysis-3"><span class="header-section-number">2.5</span> | Analysis 3</h2>
+<section id="analysis-3" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="analysis-3"><span class="header-section-number">2.4</span> | Analysis 3</h2>
 <p>To check the engagement rates by country, I want to group the countries by the highest rate of likes out of total views during the time range of the dataset, and bring top 10 countries:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>youtube  <span class="sc">%&gt;%</span></span>
