@@ -1,0 +1,6 @@
+"0","youtube  %>%"
+"0","  group_by(title) %>%"
+"0","summarise(total_comment = sum(comment_count)) %>% "
+"0","  ungroup %>% "
+"0","  arrange(desc(total_comment)) %>% "
+"0","head(5)"

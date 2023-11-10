@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-11-10">
 
-<title>NIDA DONMEZ Progress Journal</title>
+<title>NIDA DONMEZ Progress Journal - 2&nbsp; InClass1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,7 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./assignment1.html" rel="next">
+<link href="./inclass2.html" rel="next">
+<link href="./assignment1.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./inclass1.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">InClass1</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -120,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -132,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inclass1.html" class="sidebar-item-text sidebar-link">
+  <a href="./inclass1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">InClass1</span></span></a>
   </div>
 </li>
@@ -152,7 +188,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation"><span class="header-section-number">2.1</span> | Preparation</a></li>
+  <li><a href="#analysis-1" id="toc-analysis-1" class="nav-link" data-scroll-target="#analysis-1"><span class="header-section-number">2.2</span> | Analysis 1</a></li>
+  <li><a href="#analysis-2" id="toc-analysis-2" class="nav-link" data-scroll-target="#analysis-2"><span class="header-section-number">2.3</span> | Analysis 2</a></li>
+  <li><a href="#i-include-the-total-of-likes-and-views-in-my-summary-table" id="toc-i-include-the-total-of-likes-and-views-in-my-summary-table" class="nav-link" data-scroll-target="#i-include-the-total-of-likes-and-views-in-my-summary-table"><span class="header-section-number">2.4</span> I include the total of likes and views in my summary table:</a></li>
+  <li><a href="#analysis-3" id="toc-analysis-3" class="nav-link" data-scroll-target="#analysis-3"><span class="header-section-number">2.5</span> | Analysis 3</a></li>
   </ul>
 </nav>
     </div>
@@ -161,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">NIDA DONMEZ Progress Journal</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">InClass1</span></h1>
 </div>
 
 
@@ -169,6 +209,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 10, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -176,21 +222,157 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introduction" class="level1 unnumbered">
-<h1 class="unnumbered">Introduction</h1>
-<!-- DO NOT TOUCH THIS PART EXCEPT FILLING YOUR OR YOUR GROUP's NAME -->
-<p>This progress journal covers NIDA DONMEZ’s work during their term at <a href="https://mef-bda503.github.io/fall23/">BDA 503 Fall 2023</a>.</p>
-<p>Each section is an assignment or an individual work.</p>
-<!-- IF THIS IS A GROUP UNCOMMENT BELOW -->
-<!-- # Group Members
+<p>In this in-class assignment, we run three simple analyses using dplyr package on our proposed datasets in Assignment 1. My dataset was <strong>“Daily Trending Youtube Videos”</strong>.</p>
+<section id="preparation" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="preparation"><span class="header-section-number">2.1</span> | Preparation</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Installing dplyr</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
 
-+ [Member 1](Member 1's Progress Journal URL with https://)  
-+ [Member 2](Member 2's Progress Journal URL with https://)
-+ [Member 3](Member 3's Progress Journal URL with https://)
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
 
-# Group Project Details
-
-Our group project is [PROJECT NAME]. [SHORT DESCRIPTION] -->
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Importing the dataset</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>youtube <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"/Users/nidadonmez/Downloads/trending_yt_videos_113_countries.csv"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="analysis-1" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="analysis-1"><span class="header-section-number">2.2</span> | Analysis 1</h2>
+<p>Here I check the validity of the dataset by grouping the total number of records by country and filter them by randomly selected dates:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## To check if each country on a given date really contains 50 videos:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>youtube <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(snapshot_date <span class="sc">==</span> <span class="st">"2023-11-10"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a> <span class="fu">group_by</span>(country) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_count =</span><span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 113 × 2
+   country total_count
+   &lt;chr&gt;         &lt;int&gt;
+ 1 AE               50
+ 2 AL               50
+ 3 AM               50
+ 4 AR               50
+ 5 AT               50
+ 6 AU               50
+ 7 AZ               50
+ 8 BA               50
+ 9 BD               50
+10 BE               50
+# ℹ 103 more rows</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">## To continue above analysis with another random date:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>youtube <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(snapshot_date <span class="sc">==</span> <span class="st">"2023-11-05"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a> <span class="fu">group_by</span>(country) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_count =</span><span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 113 × 2
+   country total_count
+   &lt;chr&gt;         &lt;int&gt;
+ 1 AE               50
+ 2 AL               50
+ 3 AM               50
+ 4 AR               50
+ 5 AT               50
+ 6 AU               50
+ 7 AZ               50
+ 8 BA               50
+ 9 BD               50
+10 BE               50
+# ℹ 103 more rows</code></pre>
+</div>
+</div>
+</section>
+<section id="analysis-2" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="analysis-2"><span class="header-section-number">2.3</span> | Analysis 2</h2>
+<p>I want to bring the top 5 videos that have got the highest number of comments worldwide during the time range of the dataset:</p>
+</section>
+<section id="i-include-the-total-of-likes-and-views-in-my-summary-table" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="i-include-the-total-of-likes-and-views-in-my-summary-table"><span class="header-section-number">2.4</span> I include the total of likes and views in my summary table:</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>youtube  <span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(title) <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(<span class="at">total_comment =</span> <span class="fu">sum</span>(comment_count)) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  ungroup <span class="sc">%&gt;%</span> </span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_comment)) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 2
+  title                                                            total_comment
+  &lt;chr&gt;                                                                    &lt;int&gt;
+1 정국 (Jung Kook) 'Standing Next to You' Official MV                   79671285
+2 skibidi toilet 67 (part 2)                                            50070393
+3 KALAASTAR - Full Video | Honey 3.0 | Yo Yo Honey Singh &amp; Sonaks…      44020289
+4 I Built 100 Wells In Africa                                           36163225
+5 World’s Deadliest Laser Maze!                                         32026005</code></pre>
+</div>
+</div>
+</section>
+<section id="analysis-3" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="analysis-3"><span class="header-section-number">2.5</span> | Analysis 3</h2>
+<p>To check the engagement rates by country, I want to group the countries by the highest rate of likes out of total views during the time range of the dataset, and bring top 10 countries:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>youtube  <span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country) <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(<span class="at">total_view =</span> <span class="fu">sum</span>(view_count), <span class="at">like_engagement =</span> <span class="fu">sum</span>(like_count)<span class="sc">/</span><span class="fu">sum</span>(view_count)) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  ungroup <span class="sc">%&gt;%</span> </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(like_engagement)) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+   country total_view like_engagement
+   &lt;chr&gt;        &lt;dbl&gt;           &lt;dbl&gt;
+ 1 JO      1397804063          0.0683
+ 2 IQ      1487839862          0.0675
+ 3 LY      1580401023          0.0668
+ 4 LB      1838351618          0.0664
+ 5 DZ      1191019610          0.0662
+ 6 YE      1682891866          0.0650
+ 7 BR       785158849          0.0649
+ 8 TN      1800458954          0.0648
+ 9 MA      1191177698          0.0643
+10 FR       885176519          0.0643</code></pre>
+</div>
+</div>
+<p>And bring last 10 countries for lowest engagement rates:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>youtube  <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country) <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(<span class="at">total_view =</span> <span class="fu">sum</span>(view_count), <span class="at">like_engagement =</span> <span class="fu">sum</span>(like_count)<span class="sc">/</span><span class="fu">sum</span>(view_count)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  ungroup <span class="sc">%&gt;%</span> </span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(like_engagement) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+   country  total_view like_engagement
+   &lt;chr&gt;         &lt;dbl&gt;           &lt;dbl&gt;
+ 1 LA      16969834067          0.0210
+ 2 TZ       3709647151          0.0214
+ 3 KH      27864624810          0.0216
+ 4 SN      10110132491          0.0228
+ 5 AL      12484143847          0.0230
+ 6 MK      14753659905          0.0234
+ 7 BA      10629627209          0.0235
+ 8 ME      10120936040          0.0241
+ 9 AM      14818966845          0.0242
+10 AZ       9488748280          0.0248</code></pre>
+</div>
+</div>
 
 
 </section>
@@ -431,10 +613,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./assignment1.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Assignment 1</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./assignment1.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Assignment 1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./inclass2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">InClass2</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

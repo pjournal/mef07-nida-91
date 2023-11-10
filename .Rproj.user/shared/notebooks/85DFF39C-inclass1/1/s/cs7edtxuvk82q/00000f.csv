@@ -1,0 +1,2 @@
+"0","## Importing the dataset"
+"0","youtube <- read.csv(""/Users/nidadonmez/Downloads/trending_yt_videos_113_countries.csv"") "
