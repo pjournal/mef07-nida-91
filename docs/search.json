@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NIDA DONMEZ Progress Journal",
+    "section": "",
+    "text": "Introduction\n\nThis progress journal covers NIDA DONMEZ’s work during their term at BDA 503 Fall 2023.\nEach section is an assignment or an individual work."
+  },
+  {
+    "objectID": "assignment1.html#about-me",
+    "href": "assignment1.html#about-me",
+    "title": "1  Assignment 1",
+    "section": "1.1 | ABOUT ME",
+    "text": "1.1 | ABOUT ME\nI am Nida Donmez, currently studying in MEF University Big Data Analytics Master’s Program 2023-24. I work as an Indirect Online Channels Account Manager in Turkish Airlines. In my field, there is big bulk of data that requires presentation, visualisation and interpretation, which surely will bring up more sophisticated insight via deeper analysis. I aim to enrich these skills and put them in practice by making use of various tools and approaches learnt during this course."
+  },
+  {
+    "objectID": "assignment1.html#posit-pbc-youtube-channel",
+    "href": "assignment1.html#posit-pbc-youtube-channel",
+    "title": "1  Assignment 1",
+    "section": "1.2 | POSIT PBC YOUTUBE CHANNEL",
+    "text": "1.2 | POSIT PBC YOUTUBE CHANNEL\nThis is a Youtube channel created by RStudio community aiming to inform users about open-source tools for R language and data science updates, with interviews and presentations from data science professionals.\n\n1.2.1 | Leveraging R & Python in Tableau with RStudio Connect\n\n\n\nI chose to watch the video titled “Leveraging R & Python in Tableau with RStudio Connect | James Blair”.\nJames Blair is a Product Manager in Posit PBC. In this video, he presents the useful extensions of R, Python and Shiny functions for their use in Tableau. He starts with an example of implementing a machine learning model, random forest, via extensions from R and Python, but then explains that Python and R extensions might be useful not only for ML models, and also for more advanced statistical computations that Tableau is not capable of. All these extensions are possible by installing specific Tableau API packages in R and Python, and integrating them to Tableau with the extension paths created in R Studio. At the end of the video, he also presents how to provide Shiny extension. Its use is simpler, just a file version is downloaded to then be uploaded to Tableau app that is being used. At the end of the video, he illustrates an example of how the graphs created with four different tools can be displayed together in a Tableau dashboard.\nIn order to check for further resources, these extension names are:\n\nplumbertableau for R\nfastapitableau for Python\nshinytableau for Shiny"
+  },
+  {
+    "objectID": "assignment1.html#daily-trending-youtube-videos-dataset",
+    "href": "assignment1.html#daily-trending-youtube-videos-dataset",
+    "title": "1  Assignment 1",
+    "section": "1.3 | DAILY TRENDING YOUTUBE VIDEOS DATASET",
+    "text": "1.3 | DAILY TRENDING YOUTUBE VIDEOS DATASET\nThis dataset in Kaggle contains top 50 latest trending videos on YouTube across 113 countries, and is updated daily. This dataset provides comprehensive information about the top trending videos, including daily rankings, movement trends, view counts, likes, comments, and more\nGo to Kaggle for more on dataset\n\n1.3.1 | Interpreting The Dataset With R\nBelow, I imported the library “dplyr”, then imported the file in RStudio, and applied a basic formula to list the top 10 most watched Youtube channels in Turkey today (10.11.2023):\n\nlibrary(dplyr) \n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\ndf_1 &lt;- read.csv(\"/Users/nidadonmez/Downloads/trending_yt_videos_113_countries.csv\") \ndf_1 %&gt;%\narrange(desc(view_count)) %&gt;% \n  filter(snapshot_date == \"2023-11-10\") %&gt;% \n  filter(country == \"TR\") %&gt;% \n  select(channel_name, view_count, country) %&gt;% \nhead(10)\n\n             channel_name view_count country\n1        Alan Chikin Chow   22399023      TR\n2        Marusya Outdoors   19979992      TR\n3        Celine & Michiel   14528064      TR\n4  Fabiosa Best Lifehacks   12077791      TR\n5                    SMOL   11929530      TR\n6             Alex & Ksyu    7785802      TR\n7        승비니 Seungbini    7705651      TR\n8                TWO MORE    7454832      TR\n9             ARTEMI STAR    6599492      TR\n10             Sakla Beni    4458777      TR"
+  },
+  {
+    "objectID": "assignment1.html#relevant-r-posts",
+    "href": "assignment1.html#relevant-r-posts",
+    "title": "1  Assignment 1",
+    "section": "1.4 | RELEVANT R POSTS",
+    "text": "1.4 | RELEVANT R POSTS\n\n1.4.1 | Exploration for R Built-in Datasets\nThis post outlines that R-built-in datasets do not require any installation and can directly be called and functioned, as below:\n\nhead(mtcars, 6)\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nIt is also easy to visualise the data with a histogram, below example to see the frequency of hp types:\n\nhist(mtcars$hp)\n\n\n\n\nPost source\n\n\n1.4.2 | Graphics in R\nThis post here briefly explains the types of graphs that can be built by creating a simple dataset and introducing the codes for each graph types. It also provides links to more advanced content and tutorials for each graph type. This post offers a rich content of videos especially for advanced ggplot2 graphs.\nI hereby share the code for building a density graph as an example from the post:\n\nset.seed(123)\nx &lt;- rnorm(30)\ny &lt;- x + rnorm(30)  \nplot(density(x))   \n\n\n\n\nPost source"
+  }
+]
