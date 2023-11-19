@@ -1,0 +1,7 @@
+[2,"\n"]
+[1,"\u001B[31m\n\nprocessing file: inclass2.qmd\n\u001B[39m\r  |                                                          \r  |                                                    |   0%\r  |                                                          \r  |.......                                             |  14%                  \r  |                                                          \r  |...............                                     |  29% [unnamed-chunk-1]"]
+[1,"\r  |                                                          \r  |......................                              |  43%                  \r  |                                                          \r  |..............................                      |  57% [unnamed-chunk-2]"]
+[1,"\r  |                                                          \r  |.....................................               |  71%                  \r  |                                                          \r  |.............................................       |  86% [unnamed-chunk-3]"]
+[1,"\u001B[31m\nQuitting from lines 24-28 [unnamed-chunk-3] (inclass2.qmd)\n\u001B[39m"]
+[1,"\u001B[31mError:\n! Cannot use `+` with a single argument\nℹ Did you accidentally put `+` on a new line?\nBacktrace:\n 1. ggplot2:::`+.gg`(expand_limits(y = 0))\n\u001B[39m"]
+[1,"\r                                                                                                            \n\u001B[31mExecution halted\n\u001B[39m"]

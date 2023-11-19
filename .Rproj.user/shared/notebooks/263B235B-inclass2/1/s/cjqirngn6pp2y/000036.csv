@@ -1,0 +1,5 @@
+"0","## summarise the data first to see how each variable looks"
+"0","c_l_by_country <- youtube %>%"
+"0","  group_by(country) %>%"
+"0","summarise(c_engagement = sum(comment_count)/sum(view_count), l_engagement = sum(like_count)/sum(view_count))"
+"0","c_l_by_country"
