@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/mef07-nida-91/assignment1.qmd",
     "project_path": "assignment1.qmd",
     "type": "quarto_markdown",
-    "hash": "947486162",
+    "hash": "1187200536",
     "contents": "",
     "dirty": false,
     "created": 1698341267259.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "75,368",
+        "cursorPosition": "75,328",
         "scrollLine": "71"
     },
     "folds": "",
-    "lastKnownWriteTime": 1700412216,
+    "lastKnownWriteTime": 1700412735,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1700412216781,
+    "last_content_update": 1700412735096,
     "read_only": false,
     "read_only_alternatives": []
 }
