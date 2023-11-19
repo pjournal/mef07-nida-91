@@ -1,0 +1,87 @@
+---
+title: "Assignment 1"
+date: "2023-11-10"
+editor: visual
+author: "Nida Donmez"
+---
+
+## | ABOUT ME
+
+I am **Nida Donmez**, currently studying in **MEF University Big Data Analytics Master's Program 2023-24**. I work as an **Indirect Online Channels Account Manager in Turkish Airlines**. In my field, there is big bulk of data that requires presentation, visualisation and interpretation, which surely will bring up more sophisticated insight via deeper analysis. I aim to enrich these skills and put them in practice by making use of various tools and approaches learnt during this course. 
+
+[![ ](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white&color=071A2C){fig-align="left"}]( https://www.linkedin.com/in/nidad)
+
+## | POSIT PBC YOUTUBE CHANNEL
+
+This is a Youtube channel created by RStudio community aiming to inform users about open-source tools for R language and data science updates, with interviews and presentations from data science professionals.
+
+### | Leveraging R & Python in Tableau with RStudio Connect 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mvjqYHCeRF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> 
+</iframe>
+</iframe>
+
+I chose to watch the video titled **"Leveraging R & Python in Tableau with RStudio Connect \| James Blair"**.
+
+James Blair is a Product Manager in Posit PBC. In this video, he presents the useful extensions of R, Python and Shiny functions for their use in Tableau. He starts with an example of implementing a machine learning model, random forest, via extensions from R and Python, but then explains that Python and R extensions might be useful not only for ML models, and also for more advanced statistical computations that Tableau is not capable of. All these extensions are possible by installing specific Tableau API packages in R and Python, and integrating them to Tableau with the extension paths created in R Studio. At the end of the video, he also presents how to provide Shiny extension. Its use is simpler, just a file version is downloaded to then be uploaded to Tableau app that is being used. At the end of the video, he illustrates an example of how the graphs created with four different tools can be displayed together in a Tableau dashboard. 
+
+In order to check for further resources, these extension names are:
+
+- plumbertableau for R
+- fastapitableau for Python
+- shinytableau for Shiny
+
+## | DAILY TRENDING YOUTUBE VIDEOS DATASET
+
+This dataset in Kaggle contains top 50 latest trending videos on YouTube across 113 countries, and is updated daily. This dataset provides comprehensive information about the top trending videos, including daily rankings, movement trends, view counts, likes, comments, and more
+
+[*Go to Kaggle for more on dataset*](https://www.kaggle.com/datasets/asaniczka/trending-youtube-videos-113-countries){style="font-size: 20px;"}
+
+### | Interpreting The Dataset With R
+
+Below, I imported the library "dplyr", then imported the file in RStudio, and applied a basic formula to list the top 10 most watched Youtube channels in Turkey today (10.11.2023):
+
+```{r}
+library(dplyr) 
+df_1 <- read.csv("/Users/nidadonmez/Downloads/trending_yt_videos_113_countries.csv") 
+df_1 %>%
+arrange(desc(view_count)) %>% 
+  filter(snapshot_date == "2023-11-10") %>% 
+  filter(country == "TR") %>% 
+  select(channel_name, view_count, country) %>% 
+head(10)
+  
+
+```
+
+## | RELEVANT R POSTS
+
+### | Exploration for R Built-in Datasets
+
+This post outlines that R-built-in datasets do not require any installation and can directly be called and functioned, as below:
+
+```{r}
+head(mtcars, 6)
+```
+
+It is also easy to visualise the data with a histogram, below example to see the frequency of hp types:
+
+```{r}
+hist(mtcars$hp)
+```
+
+[*Post source*](https://rstudio-pubs-static.s3.amazonaws.com/481654_883a4b47c9b244d4859dd1db235f0165.html){style="font-size: 24px;"}
+
+### | Graphics in R
+This post here creates a simple dataset and briefly explains the types of useful graphs that can be built out of a dataset in R, by introducing the code for each graph type. It also provides links to more advanced content and tutorials for different graph types, and a rich content of video tutorials for the package that is used to create these graph types (ggplot2).
+
+I hereby share the code for building a density graph as an example from the post:
+```{r}
+set.seed(123)
+x <- rnorm(30)
+y <- x + rnorm(30)  
+plot(density(x))   
+```
+
+[*Post source*](https://statisticsglobe.com/graphics-in-r){style="font-size: 24px;"}
+  
