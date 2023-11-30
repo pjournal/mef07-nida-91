@@ -1,2 +1,0 @@
-"0","##a scatterplot as below can be created. "
-"0","ggplot(c_l_by_country, aes(x = c_engagement, y = l_engagement)) + geom_point() + expand_limits(y=0) + expand_limits(x=0)"

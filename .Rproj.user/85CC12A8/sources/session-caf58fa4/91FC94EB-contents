@@ -1,0 +1,21 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "NIDA DONMEZ Progress Journal"
+  repo-url: https://github.com/pjournal/mef07-nida-91
+  chapters:
+    - index.qmd
+    - assignment1.qmd
+    - inclass1.qmd
+    - inclass2.qmd
+    - shinyassignment.qmd
+  page-footer: 
+    center: "[MEF BDA 503](https://mef-bda503.github.io)" 
+  sharing: [twitter, facebook]
+
+format:
+  html:
+    theme: cosmo
+

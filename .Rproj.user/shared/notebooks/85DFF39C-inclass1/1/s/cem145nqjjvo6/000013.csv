@@ -1,0 +1,6 @@
+"0","youtube  %>%"
+"0","  group_by(country) %>%"
+"0","summarise(total_view = sum(view_count), like_engagement = sum(like_count)/sum(view_count)) %>% "
+"0","  ungroup %>% "
+"0","  arrange(desc(like_engagement)) %>% "
+"0","head(10)"

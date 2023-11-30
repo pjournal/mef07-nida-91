@@ -1,0 +1,8 @@
+"0","library(dplyr) "
+"0","df_1 <- read.csv(""/Users/nidadonmez/Downloads/trending_yt_videos_113_countries.csv"") "
+"0","df_1 %>%"
+"0","arrange(desc(view_count)) %>% "
+"0","  filter(snapshot_date == ""2023-11-10"") %>% "
+"0","  filter(country == ""TR"") %>% "
+"0","  select(channel_name, view_count, country) %>% "
+"0","head(10)"
