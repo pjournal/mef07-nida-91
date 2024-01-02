@@ -33,11 +33,11 @@ ui <- fluidPage(
   tabsetPanel
     (tabPanel('Total Views', sidebarPanel(position="left", 
                                                              selectInput("country",
-                                                                         "Country:",
+                                                                         "Enter Country:",
                                                                          choices = unique(yt$country),
                                                                          multiple = TRUE),
                                                              selectInput("channel_name",
-                                                                         "Channel Name:",
+                                                                         "Enter Channel Name:",
                                                                          choices = unique(yt$channel_name),
                                                                          multiple = TRUE)),   mainPanel(plotOutput("Plot1"), plotOutput("Plot2"))), 
               tabPanel('Date Range', sidebarPanel(position="left",

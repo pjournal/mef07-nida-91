@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/mef07-nida-91/shinyassignment.qmd",
     "project_path": "shinyassignment.qmd",
     "type": "quarto_markdown",
-    "hash": "139079712",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1704130708143.0,
@@ -17,15 +17,15 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "2:0",
-        "cursorPosition": "22,2",
-        "scrollLine": "9"
+        "cursorPosition": "0,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1704203450,
+    "lastKnownWriteTime": 1704212218,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1704203450735,
+    "last_content_update": 1704212218,
     "read_only": false,
     "read_only_alternatives": []
 }

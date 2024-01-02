@@ -1,0 +1,40 @@
+---
+title: "Optimization Case Study: Uber Elevate"
+format: html
+editor: visual
+author: "Nida Donmez"
+date: "2024-01-02"
+---
+
+**Uber Elevate**
+
+This is the name of the business unit Uber launched in order to come up with a futuristic solution to traffic problems in the cities: Uber Air. Air sharing with specifically designed aircrafts for urban use (eVTOLs -small, electric, vertical take off and landing aircrafts-) and specifically designed ports for eVTOLs (Skyports). Here is a short demo on how it was planned to look like:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3UFJPIyCQvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+
+</iframe>
+
+
+
+While the project could not be realised as planned for unkown reasons, and it is difficult to find out recent news on the urban air sharing solution, the approach to the optimisation problem of Uber Air during its planning phase was shared as a case study by [*Gurobi Optimization*](https://www.gurobi.com/case_studies/uber-shaping-urban-aerial-ridesharing/)
+
+**Optimizaton Problem**
+
+- Network Design: The first part that they wanted to optimize was the locations of the Skyports. While the input in this model was trip origin and destinations, the model was run with a clustered algorithm to select the optimal subset of clustered Skyport locations in order to maximize the expected number of riders.
+
+- Vehicle Routing: This was planned the second step after designing the network, seeking to optimize the routing of vehicles. 
+
+**Challenges**
+
+Especially vehicle routing optimization came up with challenges as this was different than a standard vehicle routing due to two reasons: i) Vehicle recharcing ii) Rider pooling. 
+
+Vehicle recharging was an optimization issue by itself to decide when, where and how often the vehicles should recharge while minimizing downtime and not exceeding the grid capacity.
+
+Rider pooling was also difficult to address as it was supposed to minimize the costs while maximising rider experience by matching them with others taking similar trips. Another difficulty of rider pooling was the fact that eVTOLs were planned as a completely new mode of transportation causing data collection constraints. The behavioral elements of riders as to how they tradeoff between different modes of transportation was another complicating challenge to handle.
+
+**Solution**
+
+The solution was the tailor made Uber Flux Optimizer, which integrated a demand forecasting and a network optimization tool, using a path-based model. The model would solve the Network Optimization problem at the first stage, and the Vehicle Routing problem taking into account the battery charging and rider matching at the second stage.
+
