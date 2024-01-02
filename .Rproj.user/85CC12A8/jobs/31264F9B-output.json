@@ -1,0 +1,4 @@
+[1,"=> shiny::runApp()\n\n"]
+[2,"Loading required package: shiny\nError in parse(file, keep.source = FALSE, srcfile = src, encoding = enc) : \n  /Users/nidadonmez/Documents/GitHub/mef07-nida-91/Shiny/app.R:32:70: unexpected ')'\n31:                             multiple = TRUE)),\n32:                  mainPanel(plotOutput(\"Plot1\"), plotOutput(\"Plot2\"))))\n                                                                         ^\nPossible unmatched ')' at:\n32:                 mainPanel(plotOutput(\"Plot1\"), plotOutput(\"Plot2\"))))\n                                                                        ^\nError in sourceUTF8(fullpath, envir = new.env(parent = sharedEnv)) : \n  Error sourcing /Users/nidadonmez/Documents/GitHub/mef07-nida-91/Shiny/app.R\nCalls: <Anonymous> ... shinyAppDir -> shinyAppDir_appR -> appObj -> func -> sourceUTF8\n"]
+[2,"Execution halted\n"]
+[1,"\nShiny application failed (exit status 1).\n\n"]

@@ -70,17 +70,10 @@
     "text": "In this in-class assignment, we visualise the comparison of two different variables of our proposed datasets in Assignment 1 via a scatterplot using “ggplot2” package.\n\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n##reimport the dataset\nyoutube &lt;- read.csv(\"/Users/nidadonmez/Downloads/trending_yt_videos_113_countries.csv\") \n\nI would like to check for any relationship between the comment engagement and the like engagement in terms of views in a scatterplot:\n\n## summarise the data first to see how each variable looks\nc_l_by_country &lt;- youtube %&gt;%\n  group_by(country) %&gt;%\nsummarise(c_engagement = sum(comment_count)/sum(view_count), l_engagement = sum(like_count)/sum(view_count))\nc_l_by_country\n\n# A tibble: 113 × 3\n   country c_engagement l_engagement\n   &lt;chr&gt;          &lt;dbl&gt;        &lt;dbl&gt;\n 1 AE          0.00227        0.0487\n 2 AL          0.000116       0.0230\n 3 AM          0.000247       0.0242\n 4 AR          0.00343        0.0606\n 5 AT          0.00303        0.0567\n 6 AU          0.00262        0.0451\n 7 AZ          0.000287       0.0248\n 8 BA          0.000148       0.0235\n 9 BD          0.000820       0.0285\n10 BE          0.000530       0.0338\n# ℹ 103 more rows\n\n\nThe comment engagement rate by country can vary in terms of decimels while like engagement is in general point two decimels. In this case, it can be difficult to summarise y values around proper numbers, but we can try:\n\n##a scatterplot as below can be created. \nggplot(c_l_by_country, aes(x = c_engagement, y = l_engagement)) + geom_point() + expand_limits(y=0)\n\n\n\n##expand_limits equaled to 0 to start each row by 0 to see clearly\n\nComment rate looked very varied having values less than e-4 and e-3 on the initial rows of data, making us think that it might also include values of until e-1 decimels. However, in the summary of the scatterplot, we can see that it is proper data in between 0 to 0.003. In this case, the scatterplot brought us a clear summary where we can see a positive correlation between the comment engagement and the like engagement."
   },
   {
-    "objectID": "shinyassignment.html#shiny-app-link",
-    "href": "shinyassignment.html#shiny-app-link",
+    "objectID": "shinyassignment.html#youtube-data-shiny-app-link",
+    "href": "shinyassignment.html#youtube-data-shiny-app-link",
     "title": "4  Shiny Assignment",
-    "section": "4.1 Shiny App Link:",
-    "text": "4.1 Shiny App Link:\nShiny App"
-  },
-  {
-    "objectID": "shinyassignment.html#command-line",
-    "href": "shinyassignment.html#command-line",
-    "title": "4  Shiny Assignment",
-    "section": "4.2 Command Line",
-    "text": "4.2 Command Line\nshiny::runGitHub(repo = \"pjournal/mef07-nida-91\",subdir=\"Shiny/app.R\")"
+    "section": "4.1 Youtube Data Shiny App Link:",
+    "text": "4.1 Youtube Data Shiny App Link:\nYoutube Shiny App\nIn this Shiny app, there are three visualisations of my selected Youtube dataset:\n\nTab 1:\nPlot 1 (Total View of Countries): Summarises the total view of selected countries during the whole time range of the data\nPlot 2 (Total View of Channels): Summarises the total view of selected channels in selected countries during the whole time range of the data\nTab 2:\nPlot 1 (View Trend of Channels Throughout the Date Range): Summarises the view trend of selected channels in selected countries for the selected date range."
   }
 ]

@@ -5,7 +5,7 @@ account: 5l60vh-nida-d
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10676846
-bundleId: 7989581
+bundleId: 8101605
 url: https://nidad.shinyapps.io/Shiny/
 version: 1
 asMultiple: FALSE

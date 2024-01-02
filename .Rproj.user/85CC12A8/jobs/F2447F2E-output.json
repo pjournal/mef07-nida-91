@@ -1,0 +1,7 @@
+[1,"=> shiny::runApp()\n\n"]
+[2,"Loading required package: shiny\n"]
+[1,"── \u001B[1mAttaching core tidyverse packages\u001B[22m ──────────────────────── tidyverse 2.0.0 ──\n\u001B[32m✔\u001B[39m \u001B[34mdplyr    \u001B[39m 1.1.3     \u001B[32m✔\u001B[39m \u001B[34mreadr    \u001B[39m 2.1.4\n\u001B[32m✔\u001B[39m \u001B[34mforcats  \u001B[39m 1.0.0     \u001B[32m✔\u001B[39m \u001B[34mstringr  \u001B[39m 1.5.0\n\u001B[32m✔\u001B[39m \u001B[34mggplot2  \u001B[39m 3.4.4     \u001B[32m✔\u001B[39m \u001B[34mtibble   \u001B[39m 3.2.1\n\u001B[32m✔\u001B[39m \u001B[34mlubridate\u001B[39m 1.9.3     \u001B[32m✔\u001B[39m \u001B[34mtidyr    \u001B[39m 1.3.0\n\u001B[32m✔\u001B[39m \u001B[34mpurrr    \u001B[39m 1.0.2     \n"]
+[1,"── \u001B[1mConflicts\u001B[22m ────────────────────────────────────────── tidyverse_conflicts() ──\n\u001B[31m✖\u001B[39m \u001B[34mdplyr\u001B[39m::\u001B[32mfilter()\u001B[39m masks \u001B[34mstats\u001B[39m::filter()\n\u001B[31m✖\u001B[39m \u001B[34mdplyr\u001B[39m::\u001B[32mlag()\u001B[39m    masks \u001B[34mstats\u001B[39m::lag()\n\u001B[36mℹ\u001B[39m Use the \u001B]8;;http://conflicted.r-lib.org/\u0007conflicted package\u001B]8;;\u0007 to force all conflicts to become errors\n"]
+[2,"Warning: The select input \"channel_name\" contains a large number of options; consider using server-side selectize for massively improved performance. See the Details section of the ?selectizeInput help topic.\n"]
+[2,"\nListening on http://127.0.0.1:5224\n"]
+[1,"\nShiny application successfully stopped.\n\n"]

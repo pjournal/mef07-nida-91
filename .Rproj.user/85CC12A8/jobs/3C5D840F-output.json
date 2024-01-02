@@ -1,0 +1,4 @@
+[1,"=> shiny::runApp()\n\n"]
+[2,"Loading required package: shiny\n"]
+[2,"Error in parse(file, keep.source = FALSE, srcfile = src, encoding = enc) : \n  /Users/nidadonmez/Documents/GitHub/mef07-nida-91/Shiny/app.R:30:1: unexpected symbol\n29: \n30: server\n    ^\nPossible missing comma at:\n30:server <- function(input, output) ({\n   ^\nPossible missing comma at:\n43:shinyApp(ui = ui, server = server)\n   ^\nError in sourceUTF8(fullpath, envir = new.env(parent = sharedEnv)) : \n  Error sourcing /Users/nidadonmez/Documents/GitHub/mef07-nida-91/Shiny/app.R\nCalls: <Anonymous> ... shinyAppDir -> shinyAppDir_appR -> appObj -> func -> sourceUTF8\nExecution halted\n"]
+[1,"\nShiny application failed (exit status 1).\n\n"]
